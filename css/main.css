@@ -335,7 +335,7 @@ h3 {
             "title img"
             "subtitle img"
             "text img";
-        grid-column-gap: 2em;
+        grid-column-gap: 2em; 
     }
 
     .section__title--about {
@@ -349,7 +349,7 @@ h3 {
         left: -1em;
         width: calc(80% + 2em);
         padding-left: 1em;
-        padding-right: calc(200px + 4em); /* ettol van a jobb padding oldalt, fix it */
+        padding-right: 165px;
     }
 
     .about__me--img {
@@ -359,7 +359,7 @@ h3 {
     }
 
     .about__me--body {
-        max-width: 700px;
+        max-width: 700px; 
     }
 }
 
