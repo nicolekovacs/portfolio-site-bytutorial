@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --ff-primary: 'Roboto Condensed', sans-serif;
     --ff-secondary: 'Lobster', cursive;
@@ -142,7 +146,7 @@ h3 {
     max-width: 70px;
 }
 
-.header {
+header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
@@ -193,6 +197,26 @@ h3 {
     right: 1em;
     top: 1em;
     z-index: 1000;
+}
+
+.nav-open .nav {
+    transform: translateZ(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateZ(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
 }
 
 .hamburger {
@@ -352,13 +376,13 @@ h3 {
         padding-right: 165px;
     }
 
-    .about__me--img {
+    .about-me__img {
         grid-area: img;
         position: relative;
         z-index: 2;
     }
 
-    .about__me--body {
+    .about-me__body {
         max-width: 700px; 
     }
 }
@@ -386,7 +410,7 @@ h3 {
 
 .portfolio__img {
     transition: 
-    transfrom 758ms cubic-bezier(.5, 0, .5, 1),
+    transform 758ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
 }
 
@@ -444,4 +468,18 @@ h3 {
 .social__list--link {
     padding: .5em;
     font-size: 1.125em;
+}
+
+/* Individual portfolio item styles */
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p {
+    max-width: 600px;
+    margin-right: auto;
+    margin-left: auto;
 }
