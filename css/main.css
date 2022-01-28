@@ -125,7 +125,7 @@ h3 {
 
 .section__title--intro {
     font-weight: var(--fw-reg);
-    padding-top: 40px;
+    /* padding-top: 40px; */
 }
 
 .section__title--intro strong {
@@ -154,10 +154,9 @@ h3 {
 /* Header */
 
 .logo {
-    padding: 15px 0 10px 15px;
     margin: 0;
-    max-width: 70px;
-}
+    max-width: 50px;
+} 
 
 header {
     display: flex;
@@ -507,4 +506,20 @@ header {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
+}
+
+.sc-link:link {
+    color: var(--clr-dark);
+}
+
+.sc-link:visited {
+    color: #052348;
+}
+
+.sc-link:hover {
+    color: var(--clr-accent);
+}
+
+.sc-link:active {
+    color: #70acf5;
 }
